@@ -23,42 +23,67 @@
             Для этого используються следующие теги :
         </p>
 
-        <table border="1" cellspacing="0" cellpadding="3">
+        <table border="1" cellspacing="0" cellpadding="5">
             <tr>
-                <td>&lt;i&gt;...&lt;/i&gt;</td>
+                <!-- align="center" центрирует элемент внутри ячейки по горизрнтали -->
+                <td align="center">&lt;i&gt;.....&lt;/i&gt;</td>
                 <td>- отображает текст курсивом.</td>
                 <td><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, ea ex in tempore fugiat quo?</i></td>
             </tr>
             <tr>
-                <td>&lt;b&gt;...&lt;/b&gt;</td>
+                <td align="center">&lt;b&gt;.....&lt;/b&gt;</td>
                 <td>- придает тексту жирное начертание.</td>
                 <td><b>Nostrum similique cum blanditiis, dolore quaerat, sunt, libero alias laborum aut maiores
                         distinctio deserunt consequuntur corrupti fuga inventore est?</b></td>
             </tr>
             <tr>
-                <td>&lt;s&gt;...&lt;/s&gt;</td>
+                <td align="center">&lt;s&gt;.....&lt;/s&gt;</td>
                 <td>- отображает выделенный текст перечеркнутым.</td>
                 <td><s>Lorem ipsum dolor sit amet consectetur adipisicing elit.</s></td>
             </tr>
             <tr>
-                <td>&lt;bdo&gt;...&lt;/bdo&gt;</td>
-                <td>- устанавливает направление вывода текста (предназначен для использования с языками, где чтение
-                    происходит справа налево).</td>
+                <td align="center">&lt;big&gt;.....&lt;/big&gt;</td>
+                <td>- отображает текст на одну условную еденицу больше.</td>
+                <td><big>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tenetur!</big></td>
             </tr>
             <tr>
-                <td>&lt;bdi&gt;...&lt;/bdi&gt;</td>
+                <td align="center">&lt;small&gt;.....&lt;/small&gt;</td>
+                <td>- делает текст на одну условную еденицу меньше.</td>
+                <td><small>Deserunt in nam minus!</small></td>
+            </tr>
+            <tr>
+                <td align="center">&lt;sup&gt;.....&lt;/sup&gt;</td>
+                <td>- отображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и
+                    уменьшенного размера.</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit<sup> dolor aut</sup></td>
+            </tr>
+            <tr>
+                <td align="center">&lt;sub&gt;.....&lt;sub&gt;</td>
+                <td>- отображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии
+                    остальных символов строки и уменьшенного размера.</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit amet facilis omnis
+                    sapiente cumque corrupti accusamus<sub> Odio laborum</sub></td>
+            </tr>
+            <tr>
+                <td align="center">&lt;bdo&gt;.....&lt;/bdo&gt;</td>
+                <td>- устанавливает направление вывода текста (предназначен для использования с языками, где чтение
+                    происходит справа налево).</td>
+                <td dir="rtl"><bdo dir="rtl">לברך אותך</bdo></td>
+            </tr>
+            <tr>
+                <td align="center">&lt;bdi&gt;.....&lt;/bdi&gt;</td>
                 <td>- указывает на фрагмент текста, который должен быть изолирован от изменения направления вывода
                     текста. Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся слева
                     направо и справа налево.</td>
+                <td>Пример текста: <bdi>שבת</bdi> — суббота.</td>
+                <!-- dir=" " задает направление для вывода текста, возможные варианты - "rtl, ltr, auto" -->
             </tr>
         </table>
 
-        <p class="box__text">
-            <b>Tincidunt</b> integer eu <i>augue augue</i> nunc elit dolor, luctus placerat scelerisque euismod,
-            iaculis eu lacus nunc mi elit, <s>vehicula ut laoreet ac</s> , aliquam sit <sub>amet</sub> justo nunc
-            tempor,
-            metus vel.
-        </p>
+        <!-- Также существует еще два тега <meter></meter> и <progress></progress>
+        <meter> - используется для вывода значения в некотором известном диапазоне. (HTML5).
+        <progress> - используется для отображения прогресса завершенности. (HTML5).  -->
+
     </main>
 </body>
 
