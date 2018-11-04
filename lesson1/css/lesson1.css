@@ -1,0 +1,69 @@
+﻿h1 {
+    font-family: 'Scada', sans-serif;
+    background-color: yellow;
+    font-weight: 700;
+    text-align: left;
+    padding: 20px 20px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+h2 {
+    font-family: 'Scada', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 0;
+    user-select: none;
+}
+
+h3 {
+    font-family: 'Scada', sans-serif;
+    padding: 10px 10px;
+    font-size: 24px;
+    font-weight: 400;
+    user-select: none;
+}
+
+.box__title {
+    padding: 5px 10px;
+    font-weight: 400;
+}
+
+.box {
+    margin: 10px 10px;
+    background-color: honeydew;
+}
+
+#second__block:hover, #third__block:hover, #fourth__block:hover {
+    background-color: aquamarine;
+}
+
+#bonus__block:hover {
+    background-color: lavender;
+}
+
+.box__text {
+    padding: 10px 10px;
+    font-size: 22px;
+    user-select: none;
+}
+
+.back {
+    width: 130px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.back:hover {
+    background-color: yellowgreen;
+    color: black;
+    cursor: pointer;
+}
