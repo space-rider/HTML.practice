@@ -1,14 +1,16 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Введение в HTML5</title>
-    <link href="https://fonts.googleapis.com/css?family=Scada:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link href="lesson1.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/lesson1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
+
 <body>
 
     <h2>
@@ -16,19 +18,63 @@
         предыдущий примеры в разных браузерах. Отличаются ли элементы в разных браузерах?
     </h2>
 
-    <p class="box__text">
-        <mark><strong>Tincidunt integer eu <em>augue augue</em> nunc elit dolor</strong></mark>, luctus placerat scelerisque euismod, <q>iaculis eu lacus nunc mi elit</q> , vehicula ut laoreet ac, aliquam sit amet justo nunc tempor<mark><del>, metus vel.</del></mark>
+    <p>Логическое форматирование текста – это форматирование текста предназначенное для удобства работы с
+        ним поисковых систем и прочих программ, например, различных читалок. А вот и теги которые
+        применяются для логической разметки:
     </p>
 
-    <p class="box__text">
-        Tincidunt integer eu augue augue nunc elit dolor <mark><ins>augue augue nunc elit dolor</ins></mark>, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
-    </p>
+    <div class="tags" style='border: solid 1px black'>
+        <p>&lt; abbr &gt; ... &lt; /abbr &gt; - указывает на то что текст внутри тега является аббревеатурой.
+            С помощью атрибута <span>title</span> дается расшифровка сокращения, что позволяет понимать аббревиатуру
+            тем
+            людям, которые
+            с ней не знакомы. Кроме того, поисковые системы индексируют полнотекстовый вариант сокращения, что может
+            использоваться для повышения рейтинга документа.
+        </p>
 
-    <div class="back"><a href="index.html" style="color: white; text-decoration:none" title="вернуться к списку заданий" alt="кнопка назад">Назад</a></div>
+        <p>&lt; cite &GT; ... &LT; /cite &gt; - делает текст сноской или цитатой.</p>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <p>&lt; code &gt; ... &lt; /code &gt; - предназначен для отображения одной или нескольких строк текста, который
+            представляет собой программный код. Сюда относятся имена переменных, ключевые слова, тексты функции и т.д.
+            Как правило тображается моноширным текстом меньшего размера.
+        </p>
+
+        <p>&lt; strong &gt; ... &lt; /strong &gt; - тег является тегом логической разметки и определяет важность
+            помеченного текста (очень похож на тег &lt; b &gt; но это не одно и тоже). Задает тексту жирное начертание.
+        </p>
+
+        <p>&lt; em &gt; ... &lt; /em &gt; - указывает браузеру на важность текста и задает ему курсивное начертание.
+        </p>
+
+        <p>&lt; del &gt; ... &lt; /del &gt; - используется для выделения текста, который был удален в новой версии
+            документа.
+        </p>
+
+        <p>&lt; ins &gt; ... &lt; /ins &gt; - предназначен для выделения текста, который был добавлен в новую версию
+            документа.
+        </p>
+
+        <p>&lt; mark &gt; ... &lt; /mark &gt; - омечает текст как выделенный. Такой текст ничем не отличается от
+            обычного, но его вид может быть изменен с помощью стилей. В браузере Chrome и Firefox фоновый цвет текста
+            внутри выделяется желтым цветом.</p>
+
+        <p>&lt; q &gt; ... &lt; /q &gt; - выделяет текст в цитату.Содержимое контейнера автоматически отображается в
+            браузере в кавычках.</p>
+
+        <p>&lt; samp &gt; ... &lt; / samp &gt; - используется для отображения текста, который является результатом
+            вывода компьютерной программы или скрипта.
+            Браузеры обычно отображают текст с помощью моноширинного шрифта.
+        </p>
+
+        <p>&lt; var &gt; ... &lt; / var &gt; - используется для выделения переменных компьютерных программ. Браузеры
+            обычно помечают текст курсивным начертанием.</p>
+    </div>
+
+    <h3>Примеры работы логических тегов с текстом :</h3>
+
+    <p></p>
+
 
 </body>
+
 </html>

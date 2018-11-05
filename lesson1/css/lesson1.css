@@ -1,8 +1,16 @@
-﻿h1,h2 {
+﻿h1 {
     font-family: 'Istok Web', sans-serif;
     text-align: center;
 }
 
 p {
     font-size: 1.1em;
+}
+
+span {
+    color: red;
+}
+
+.tags{
+    padding: 0.5% 2% 0.5% 2%;
 }
