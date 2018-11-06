@@ -7,11 +7,30 @@ p {
     font-size: 1.1em;
 }
 
+code {
+    color: red;
+    float: left;
+    border-right: 1.5px solid black;
+    padding-right: 2%;
+    margin-right: 2%;
+}
+
 .tags{
     padding: 0.5% 2% 0.5% 2%;
 }
 
-ul {
+.red {
+    color: red;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.blue {
+    color: blue;
+    font-weight: 500;
+}
+/* снизу разметка для списка который используется для навигации */
+nav>ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -19,7 +38,12 @@ ul {
     padding: 0.8rem;
 }
 
-li {
+nav>ul>li {
     float: left;
     margin-left: 0.1rem;
+}
+
+.current_location {
+    text-decoration: none;
+    color: grey;
 }
