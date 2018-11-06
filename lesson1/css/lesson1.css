@@ -15,6 +15,10 @@ code {
     margin-right: 2%;
 }
 
+.box {
+    padding: 0 3%;
+}
+
 .tags{
     padding: 0.5% 2% 0.5% 2%;
 }
