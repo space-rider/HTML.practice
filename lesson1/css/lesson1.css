@@ -7,10 +7,19 @@ p {
     font-size: 1.1em;
 }
 
-span {
-    color: red;
-}
-
 .tags{
     padding: 0.5% 2% 0.5% 2%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    padding: 0.8rem;
+}
+
+li {
+    float: left;
+    margin-left: 0.1rem;
 }
