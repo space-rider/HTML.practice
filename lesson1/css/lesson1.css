@@ -4,7 +4,7 @@
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 code {
@@ -13,10 +13,6 @@ code {
     border-right: 1.5px solid black;
     padding-right: 2%;
     margin-right: 2%;
-}
-
-.box {
-    padding: 0 3%;
 }
 
 .tags{
@@ -51,3 +47,17 @@ nav>ul>li {
     text-decoration: none;
     color: grey;
 }
+/* стили для карточек в меню*/
+.article_card{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 1%;
+    margin: 0.2rem 2%;
+}
+
+.article_card h3 {
+    padding: 0;
+    display: inline;
+    border-bottom: 1px solid black;
+}
+
