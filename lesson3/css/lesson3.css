@@ -1,15 +1,4 @@
-﻿/* .center-img {
-    display: block;
-    margin: 0 auto;
-}
-
-.brdr {
-    border: solid;
-    border-color: slategrey;
-    padding: 3px;
-} */
-
-p {
+﻿p {
     width: 180px;
     text-align: center;
 }
