@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Введение в HTML5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/lesson1.css" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
 </head>
 
 <body>
@@ -18,78 +18,83 @@
             <li><a href="index.html">к списку задач</a> /</li>
             <li><a href="#" class="current_location">задание №1</a></li>
         </ul>
-
-        <h2>Создайте страницу, на которой разместите теги физической разметки.</h2>
     </nav>
 
-    <main>
+    <header>
+        <h2>Создайте страницу, на которой разместите теги физической разметки.</h2>
+    </header>
 
-        <p>
-            Физическое форматирование текста используется для придания тексту некоторых визуальных отличий.
-            Для этого используються следующие теги :
-        </p>
+    <section>
+        <article>
+            <p>
+                Физическое форматирование текста используется для придания тексту некоторых визуальных отличий.
+                Для этого используються следующие теги :
+            </p>
 
-        <div id=table__tags_example>
-            <table border="1" cellspacing="0" cellpadding="5">
-                <tr>
-                    <!-- align="center" центрирует элемент внутри ячейки по горизрнтали, также есть и другие варианты по выравниванию-->
-                    <td>&lt; i &gt; ... &lt; /i &gt; - отображает текст курсивом.</td>
-                    <td><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, ea ex in tempore fugiat
-                            quo?</i></td>
-                </tr>
-                <tr>
-                    <td>&lt; b &gt; ... &lt; /b &gt; - придает тексту жирное начертание.</td>
-                    <td><b>Nostrum similique cum blanditiis, dolore quaerat, sunt, libero alias laborum aut maiores
-                            distinctio deserunt consequuntur corrupti fuga inventore est?</b></td>
-                </tr>
-                <tr>
-                    <td>&lt; s &gt; ... &lt; /s &gt; - отображает выделенный текст перечеркнутым.</td>
-                    <td><s>Lorem ipsum dolor sit amet consectetur adipisicing elit.</s></td>
-                </tr>
-                <tr>
-                    <td>&lt; big &gt; ... &lt; /big &gt; - отображает текст на одну условную еденицу больше.</td>
-                    <td><big>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tenetur!</big></td>
-                </tr>
-                <tr>
-                    <td>&lt; small &gt; ... &lt; /small &gt; - делает текст на одну условную еденицу меньше.</td>
-                    <td><small>Deserunt in nam minus!</small></td>
-                </tr>
-                <tr>
-                    <td>&lt; sup &gt; ... &lt; /sup &gt; - отображает шрифт в виде верхнего индекса. Шрифт
-                        при этом отображается выше базовой линии текста и
-                        уменьшенного размера.</td>
-                    <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit<sup> dolor aut</sup></td>
-                </tr>
-                <tr>
-                    <td>&lt; sub &gt; ... &lt; sub &gt; - отображает шрифт в виде нижнего индекса. Текст при
-                        этом располагается ниже базовой линии
-                        остальных символов строки и уменьшенного размера.</td>
-                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit amet facilis omnis
-                        sapiente cumque corrupti accusamus<sub> Om</sub></td>
-                </tr>
-                <tr>
-                    <td>&lt; bdo &gt; ... &lt; /bdo &gt; - устанавливает направление вывода текста
-                        (предназначен для использования с языками, где чтение
-                        происходит справа налево).</td>
-                    <td dir="rtl"><bdo dir="rtl">לברך אותך</bdo></td>
-                </tr>
-                <tr>
-                    <td>&lt; bdi &gt; ... &lt; /bdi &gt;- указывает на фрагмент текста, который должен быть
-                        изолирован от изменения направления вывода
-                        текста. Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся
-                        слева
-                        направо и справа налево.</td>
-                    <td>Пример текста: <bdi>שבת</bdi> — суббота.</td>
-                    <!-- dir=" " задает направление для вывода текста, возможные варианты - "rtl, ltr, auto" -->
-                </tr>
-            </table>
-        </div>
+            <div id=table__tags_example>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <!-- align="center" центрирует элемент внутри ячейки по горизрнтали, также есть и другие варианты по выравниванию-->
+                        <td>&lt; i &gt; ... &lt; /i &gt; - отображает текст курсивом.</td>
+                        <td><i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, ea ex in tempore
+                                fugiat
+                                quo?</i></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; b &gt; ... &lt; /b &gt; - придает тексту жирное начертание.</td>
+                        <td><b>Nostrum similique cum blanditiis, dolore quaerat, sunt, libero alias laborum aut maiores
+                                distinctio deserunt consequuntur corrupti fuga inventore est?</b></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; s &gt; ... &lt; /s &gt; - отображает выделенный текст перечеркнутым.</td>
+                        <td><s>Lorem ipsum dolor sit amet consectetur adipisicing elit.</s></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; big &gt; ... &lt; /big &gt; - отображает текст на одну условную еденицу больше.</td>
+                        <td><big>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, tenetur!</big></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; small &gt; ... &lt; /small &gt; - делает текст на одну условную еденицу меньше.</td>
+                        <td><small>Deserunt in nam minus!</small></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; sup &gt; ... &lt; /sup &gt; - отображает шрифт в виде верхнего индекса. Шрифт
+                            при этом отображается выше базовой линии текста и
+                            уменьшенного размера.</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit<sup> dolor aut</sup></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; sub &gt; ... &lt; sub &gt; - отображает шрифт в виде нижнего индекса. Текст при
+                            этом располагается ниже базовой линии
+                            остальных символов строки и уменьшенного размера.</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit amet facilis
+                            omnis
+                            sapiente cumque corrupti accusamus<sub> Om</sub></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; bdo &gt; ... &lt; /bdo &gt; - устанавливает направление вывода текста
+                            (предназначен для использования с языками, где чтение
+                            происходит справа налево).</td>
+                        <td dir="rtl"><bdo dir="rtl">לברך אותך</bdo></td>
+                    </tr>
+                    <tr>
+                        <td>&lt; bdi &gt; ... &lt; /bdi &gt;- указывает на фрагмент текста, который должен быть
+                            изолирован от изменения направления вывода
+                            текста. Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся
+                            слева
+                            направо и справа налево.</td>
+                        <td>Пример текста: <bdi>שבת</bdi> — суббота.</td>
+                        <!-- dir=" " задает направление для вывода текста, возможные варианты - "rtl, ltr, auto" -->
+                    </tr>
+                </table>
+            </div>
 
-        <!-- Также существует еще два тега <meter></meter> и <progress></progress>
+            <!-- Также существует еще два тега <meter></meter> и <progress></progress>
         <meter> - используется для вывода значения в некотором известном диапазоне. (HTML5).
         <progress> - используется для отображения прогресса завершенности. (HTML5).  -->
 
-    </main>
+        </article>
+    </section>
 
 </body>
 

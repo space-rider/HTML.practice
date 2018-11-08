@@ -8,7 +8,22 @@
     <title>Введение в HTML5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/lesson1.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+        /* стили для карточек в меню*/
+        .article_card {
+            border: 1px solid black;
+            display: inline-block;
+            padding: 1%;
+            margin: 0.2rem 2%;
+        }
+
+        .article_card h3 {
+            padding: 0;
+            display: inline;
+            border-bottom: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,52 +31,48 @@
         <h1>Введение в HTML5</h2>
     </header>
 
-    <section>
-        <article>
-            <div class="article_card">
-                <h3>Самостоятельная деятельность</h3>
-                <a href="first_page.html">
-                    <p>
-                        Выучите основные термины и понятия, рассмотренные на уроке.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
-                <h3>Задание №1</h3>
-                <a href="second_page.html">
-                    <p>
-                        Создайте страницу, на которой разместите теги физической разметки.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
-                <h3>Задание №2</h3>
-                <a href="third_page.html">
-                    <p>
-                        Создайте страницу, на которой будут размещены теги логической разметки. Запустите этот и
-                        предыдущий примеры в разных браузерах. Отличаются ли элементы в разных браузерах?
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
-                <h3>Задание №3</h3>
-                <a href="fourth_page.html">
-                    <p>
-                        Создайте страницу, которая находится в каталоге HW.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
-                <h3>Дополнительное задание</h3>
-                <a href="bonus_page.html">
-                    <p>
-                        Создайте HTML страницу, на которой, с помощью тега &lt;h1&gt; выведите приветствие к
-                        пользователю.
-                    </p>
-                </a>
-            </div><br>
-        </article>
-    </section>
+    <div class="article_card">
+        <h3>Самостоятельная деятельность</h3>
+        <a href="first_page.html">
+            <p>
+                Выучите основные термины и понятия, рассмотренные на уроке.
+            </p>
+        </a>
+    </div><br>
+    <div class="article_card">
+        <h3>Задание №1</h3>
+        <a href="second_page.html">
+            <p>
+                Создайте страницу, на которой разместите теги физической разметки.
+            </p>
+        </a>
+    </div><br>
+    <div class="article_card">
+        <h3>Задание №2</h3>
+        <a href="third_page.html">
+            <p>
+                Создайте страницу, на которой будут размещены теги логической разметки. Запустите этот и
+                предыдущий примеры в разных браузерах. Отличаются ли элементы в разных браузерах?
+            </p>
+        </a>
+    </div><br>
+    <div class="article_card">
+        <h3>Задание №3</h3>
+        <a href="fourth_page.html">
+            <p>
+                Создайте страницу, которая находится в каталоге HW.
+            </p>
+        </a>
+    </div><br>
+    <div class="article_card">
+        <h3>Дополнительное задание</h3>
+        <a href="bonus_page.html">
+            <p>
+                Создайте HTML страницу, на которой, с помощью тега &lt;h1&gt; выведите приветствие к
+                пользователю.
+            </p>
+        </a>
+    </div><br>
 
     <footer>
         <nav>
