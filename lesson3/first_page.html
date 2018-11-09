@@ -16,7 +16,7 @@
         <ul>
             <li><a href="../index.html">главная страница</a> /</li>
             <li><a href="index.html">к списку задач</a> /</li>
-            <li><a href="#" class="current_location">...</a></li>
+            <li><a href="#" class="current_location">самостоятельная деятельность</a></li>
         </ul>
     </nav>
 
@@ -129,18 +129,148 @@
             <p>
                 Если внутри этих тегов будут находится текстовые элементы, они будут наследовать определенные правила.
             </p>
+            <pre>
+    <span class="blue">p</span>
+        {
+            <span class="red">font-family</span>: Arial;
+            <span class="red">font-size</span>: 18pt;
+            <span class="red">color</span>: green;
+        }
+            </pre>
+            <h3><mark>Селектор класса</mark></h3>
+            <p>Если необходимо задать стили для индивидуального элемента или задать разные стили для одного тега
+                следует использовать селектор класс.</p>
+            <p>Имена классов должны начинаться с латинского символа и могут содержать в себе символ дефиса и
+                подчеркивания.</p>
+            <p>
+                Чтобы привязать к элементу класс, необходимо в
+                открывающем теге задать атрибут <span class="red">class</span> и присвоить ему
+                имя класса, описанного в стилях.
+            </p>
+            <p><span class="blue">&lt; p <span class="red">class</span> ="</span><span class="red">testClass</span><span
+                    class="blue">"&gt;</span>
+                Content <span class="blue">&lt; /p &gt;</span></p>
+            <pre>
+    <span class="blue">.testClass</span>
+        {
+            <span class="red">font-family</span>: Arial;
+            <span class="red">font-size</span>: 2em;
+            <span class="red">font-style</span>: italic;
+        }            
+            </pre>
+            <h3>
+                <mark>Селектор идентификатор</mark>
+            </h3>
+            <p><b>Идентификатор</b> – особенный вид селектора, которым помечается один элемент на странице. Чтобы
+                указать селектор идентификатор, в CSS необходимо использовать конструкцию <i>#имя_идентификатора</i>.
+            </p>
+            <p>Чтобы привязать к элементу идентификатор, необходимо
+                в открывающем теге задать атрибут <span class="red">id</span> и присвоить ему
+                имя идентификатора, описанного в стилях.
+            </p>
+            <p><span class="blue">&lt; p <span class="red">id</span>="</span><span class="red">id1</span><span class="blue">"&gt;</span>
+                Content <span class="blue">&lt; /p &gt;</span></p>
+            <pre>
+    <span class="blue">#id1</span>
+        {
+            <span class="red">font-family</span>: Arial;
+            <span class="red">font-weight</span>: 300;
+            <span class="red">border</span>: 1px solid black;
+            <span class="red">color</span>: blue;
+        }            
+            </pre>
+        </article>
+
+        <article>
+            <h3>
+                <mark>Свойства width и height</mark>
+            </h3>
+            <p>
+                Свойство <span class="red">width</span> устанавливает ширину блочных элементов. Ширина элемента не
+                включает толщину границ
+                вокруг элемента, значение отступов и полей элемента. В качестве значений можно задавать любые
+                допустимые в CSS единицы измерения.
+            </p>
+            <p>
+                Свойство <span class="red">height</span> устанавливает высоту блочных элементов. Высота элемента не
+                включает толщину границ
+                вокруг элемента, значение отступов и полей. В качестве значений можно задавать любые допустимые в
+                CSS единицы измерения.
+            </p>
+
+            <h3>
+                <mark>Работа со шрифтами</mark>
+            </h3>
+            <p>
+                <span class="red">Font</span> - это универсальное свойство, которое позволяет устанавливать
+                одновременно несколько характеристик шрифта. <br>
+                <span class="red">Font-family</span> - устанавливает семейство шрифта для оформления текста одержимого.
+                <br>
+                <span class="red">Font-size</span> - определяет размер шрифта элемента. <br>
+                <span class="red">Font-stretch</span> - устанавливает узкое, нормальное или широкое начертание шрифта.
+                <br>
+                <span class="red">Font-style</span> - задает начертание шрифта. <br>
+                <span class="red">Font-variant</span> - определяет как представлять строчные буквы. <br>
+                <span class="red">Font-weight</span> - устанавливает насыщенность шрифта.
+            </p>
+
+            <h3>
+                <mark>Свойство background</mark>
+            </h3>
+            <p>
+                <span class="red">Background</span> - это универсальное свойство, которое позволяет устанавливать
+                одновременно до 5 характеристик фона. <br>
+                <span class="red">Background-attachment</span> - устанавливает будет ли прокручиваться фоновое
+                изображение. <br>
+                <span class="red">Background-clip –</span> - определяет вид фона или изображения под границами элемента
+                (CSS3). <br>
+                <span class="red">Background-color</span> - задает цвет фона элемента. <br>
+                <span class="red">Background-image</span> - задает фоновое изображение элементу. <br>
+                <span class="red">Background-origin</span> - определяет область позиционирования фонового рисунка
+                (CSS3). <br>
+                <span class="red">Background-position</span> - свойство задает начальное положение фонового
+                изображения. <br>
+                <span class="red">Background-repeat</span> - определяет повторение фонового изображения. <br>
+                <span class="red">Background-size –</span> - свойство масштабирует фоновое изображение (CSS3).
+            </p>
+
+            <h3>
+                <mark>Свойство border</mark>
+            </h3>
+            <p>
+                <span class="red">Border</span> - это универсальное свойство, которое позволяет устанавливать
+                одновременно толщину, стиль и цвет границы
+                вокруг элемента. <br>
+                <span class="red">Border-bottom</span> - позволяет одновременно установить толщину, стиль и цвет
+                границы внизу элемента. <br>
+                <span class="red">Border-color</span> - устанавливает цвет границы на разных сторонах элемента. <br>
+                <span class="red">Border-image</span> - задает изображение для рамки вокруг элемента (CSS3). <br>
+                <span class="red">Border-left</span> - свойство позволяет одновременно установить толщину, стиль и цвет
+                левой границы элемента. <br>
+                <span class="red">Border-radius</span> - свойство задает радиус округления углов рамки (CSS3). <br>
+                <span class="red">Border-right</span> - свойство позволяет одновременно установить толщину, стиль и
+                цвет правой границы элемента. <br>
+                <span class="red">Border-style </span> - устанавливает стиль границы вокруг элемента. <br>
+                <span class="red">Border-top</span> - свойство позволяет одновременно установить толщину, стиль и цвет
+                верхней границы элемента. <br>
+                <span class="red">Border-width</span> - свойство задает толщину границы.
+            </p>
+        </article>
+
+        <article>
+            И на последок отличная стать и Em и Rem <a href="https://habr.com/post/280125/">https://habr.com/post/280125/</a>
         </article>
     </section>
 
-    <!-- <footer>
+    <footer>
         <nav>
             <ul>
                 <li><a href="../index.html">главная страница</a> /</li>
                 <li><a href="index.html">к списку задач</a> /</li>
-                <li><a href="first_page.html" class="current_location">задание №1</a></li>
+                <li><a href="#" class="current_location">самостоятельная деятельность</a></li>
             </ul>
         </nav>
-    </footer> -->
+    </footer>
 
 </body>
 
