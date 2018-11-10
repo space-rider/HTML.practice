@@ -5,7 +5,6 @@ div.ten > p {
     background-color: green;
     float: left;
     margin: 0;
-    
 }
 
 h2 {
@@ -14,40 +13,43 @@ h2 {
     margin-left: 3px;
     padding-left: 12px;
 }
-header {
+header>p {
     background-color: turquoise;
     height:150px;
     font-weight: bold;
-    
+    margin: 0;
+    padding: 0;
 }
-nav {
+nav>p {
     background-color: lightpink;
     font-weight: bold;
     height: 60px;
     float: none;
+    margin: 0;
 }
-.content1 {
+.content1>p {
     background-color: mediumseagreen;
     width: 40%;
     height: 600px;
     font-weight: bold;
     float: left;
-    
+    margin: 0;
 }
-.content2 {
+.content2>p {
     background-color: darkgrey;
     font-weight: bold;
     height: 600px;
     width: 60%;
     float: left;
+    margin: 0;
 }
-footer {
+footer>p {
     background-color: blue;
     height: 200px;
     font-weight: bold;
     width: 100%;
     float: left;
-    
+    margin: 0;
 }
 
 #header1 {
