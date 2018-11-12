@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Семантика HTML5 и новые теги</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+        .example {
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">главная страница</a> /</li>
+            <li><a href="index.html">к списку задач</a> /</li>
+            <li><a href="#" class="current_location">самостоятельная деятельность</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Семантика HTML5 и новые теги.</h2>
+    </header>
+
+    <section>
+        <article>
+            <h3>
+                <mark>Семантическая разметка страницы</mark>
+            </h3>
+
+            <p>
+                HTML5 вводит ряд новых семантических элементов, которые
+                определяют блоки различных частей веб-страницы.
+                Семантические элементы четко описывают, что они означают, как
+                браузеру, так и веб-разработчику. <br>
+                В качестве примера не семантических элементов можно привести теги
+                <span class="blue">&lt; div &gt;</span> и <span class="blue">&lt; span &gt;</span>. Они ничего не
+                говорят о характере контента, когда
+                семантические элементы, такие как <span class="blue">&lt; form &gt;</span>, <span class="blue">&lt;
+                    table &gt;</span>, четко описывают
+                какого характера контент они содержат.
+            </p>
+
+            <div class="example">
+                <img src="https://msiter.ru/sites/default/files/msiter_images/semantic_elements.gif" alt="Пример семантических элементов.gif"
+                    title="Пример семантических элементов"> <br>
+                <cite>Иллюстрация с сайта - https://msiter.ru/tutorials/html5/semantic_elements</cite>
+            </div>
+        </article>
+
+        <article>
+            <h3>
+                <mark>Семантические элементы</mark>
+            </h3>
+
+            <p>
+                <span class="blue">&lt; article &gt; &lt; /article &gt;</span> - элемент определяет независимый и
+                самодостаточный контент. Может быть вложен в
+                тег <span class="blue">&lt; section &gt;</span>, как и <span class="blue">&lt; section &gt;</span> в
+                <span class="blue">&lt; article &gt;</span>.
+            </p>
+
+            <p>
+                <span class="blue">&lt; aside &gt; &lt; /aside &gt;</span> - определяет контент, находящийся в стороне
+                от контента, внутри которого он
+                расположен.
+            </p>
+
+            <p>
+                <span class="blue">&lt; footer &gt; &lt; /footer &gt;</span> - предназначен для определения «подвала»
+                документа или раздела.
+            </p>
+
+            <p>
+                <span class="blue">&lt; header &gt; &lt; /header &gt;</span> - предназначен для определения
+                заголовочного блока или «шапки» документа или
+                раздела.
+            </p>
+
+            <p>
+                <span class="blue">&lt; main &gt; &lt; /main &gt;</span> - определяет основной контент документа.
+            </p>
+
+            <p>
+                <span class="blue">&lt; nav &gt; &lt; /nav &gt;</span> - предназначен для группировки ссылок навигации.
+            </p>
+
+            <p>
+                <span class="blue">&lt; section &gt; &lt; /section &gt;</span> - элемент определяет раздел в документе.
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                <mark>Аудио</mark>
+            </h3>
+            <p>HTML5 предоставляет улучшенные возможности работы с аудио контентом.
+                Элемент <span class="blue">&lt; audio &gt;</span> используется для добавления звукового контента на
+                веб-страницу.
+            </p>
+            <p>
+                Поскольку на данный момент не существует аудио формата, который бы работал во всех
+                браузерах. И для обеспечения доступности контента максимально широкой аудитории
+                рекомендуется включать несколько источников звука, с помощью элемента <span class="blue">&lt; source
+                    &gt;</span>.
+            </p>
+            <p>
+                Дополнительный материал по теме.
+                <a href="https://habr.com/post/148202/">https://habr.com/post/148202/</a>
+            </p>
+        </article>
+
+        <article>
+            <h3>
+                <mark>Видео</mark>
+            </h3>
+            <p>
+                До выхода HTML5, для добавления видео на страницу, приходилось использовать
+                элемент <span class="blue">&lt; object &gt;</span>, который представлял собой контейнер для внешних
+                объектов, или
+                использовать подключаемый модуль браузера, например Silverlight или Flash. Это
+                приводило к большому нагромождению кода.
+                В HTML5 используется элемент <span class="blue">&lt; video &gt;</span> для добавления видео контента на
+                веб-страницу.
+            </p>
+            <p>
+                    Дополнительный материал по теме.
+                    <a href="https://habr.com/post/104591/">https://habr.com/post/104591/</a>
+                </p>
+        </article>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="first_page.html" class="current_location">самостоятельная деятельность</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

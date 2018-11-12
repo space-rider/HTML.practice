@@ -1,0 +1,45 @@
+﻿h1{
+    padding-left: 10px;
+}
+
+h2 {
+    padding-left: 12px;
+    }
+
+p {
+    padding-left: 26px;
+}
+
+header {
+    background-color: #64CACB;
+    height: 100px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #FB9693;
+    height: 40px;
+    font-weight: bold;
+}
+
+aside {
+    background-color: #94D09C;
+    width: 20%;
+    height: 400px;
+    float: left;
+    font-weight: bold;
+}
+
+main {
+    background-color: #CCCFD0;
+    width: 100%;
+    height: 400px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #0466FC;
+    height: 100px;
+    font-weight: bold;
+}
+
