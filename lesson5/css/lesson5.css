@@ -17,6 +17,7 @@ header {
 }
 
 nav {
+    display: block;
     background-color: #FB9693;
     height: 40px;
     font-weight: bold;
@@ -43,4 +44,14 @@ footer {
     font-weight: bold;
 }
 
+#audio_player {
+    border: 1px solid rgba(153, 153, 153, 0.918);
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 1.5%;
+}
+
+#audio_player>audio {
+    border-radius: 5px;
+}
 
