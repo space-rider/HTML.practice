@@ -7,8 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Верстка формы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
+    <style>
+        article:last-of-type {
+            margin-top: 40px;
+        }
+
+        hr {
+            color: grey;
+            opacity: 0.2;
+            height: 0.1px;
+        }
+
+        form {
+            width: 350px;
+            margin-top: 3%;
+            font-size: 0.80rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        form>p {
+            font-size: 0.85rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            color: #003b67;
+            position: relative;
+            display: inline;
+            background-color: white;
+            top: -20px;
+            left: 30px;
+            padding: 0 25px;
+        }
+
+        #first_name, #middle_name, #last_name, #address_field, #town_field, #state_field, #zipcode_field {
+            margin: 0.5% 30px;
+        }
+
+        #state_field {
+            width: 147px;
+            height: 1.45rem;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .text_imput {
+            text-align: right;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -23,6 +70,48 @@
     <header>
         <h2>Сверстайте форму, представленную в материалах урока.</h2>
     </header>
+
+    <section>
+        <article>
+            <form method="post" action="first_task.html" enctype="text/plain" autocomplete="on">
+                <hr>
+                <p>Personal information</p><br>
+                <div class="text_imput">
+                    <b>* First name:</b><input type="text" name="first_name" id="first_name"> <br>
+                </div>
+                <div class="text_imput">
+                    Middle name:<input type="text" name="middle_name" id="middle_name"> <br>
+                </div>
+                <div class="text_imput">
+                    <b>* Last name:</b><input type="text" name="last_name" id="last_name"> <br>
+                </div><br><br>
+
+                <hr>
+                <p>Address</p>
+                <div class="text_imput">
+                    Address:<input type="text" name="address" id="address_field">
+                </div>
+                <div class="text_imput">
+                    City or town:<input type="text" name="town_field" id="town_field">
+                </div>
+                <div class="text_imput">
+                    State: <select name="state_field" id="state_field">
+                        <option value="Choose a State">Choose a State</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="California">California</option>
+                        <option value="Washington DC">Washington DC</option>
+                    </select>
+                </div>
+                <div class="text_imput">
+                    <b>*Zip code:</b><input type="text" name="zipcode_field" id="zipcode_field">
+                </div>
+            </form>
+        </article>
+
+        <article>
+            <img src="img/form1.jpg" alt="образец формы.jpg" title="Образец формы">
+        </article>
+    </section>
 
 </body>
 
