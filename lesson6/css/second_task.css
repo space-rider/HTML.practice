@@ -1,0 +1,13 @@
+article:last-of-type {
+    margin-top: 40px;
+  }
+
+  h4{
+    color: #00306c;
+    margin-bottom: 10px;
+  }
+
+  form {
+    width: 400px;
+    margin-top: 3%;
+  }

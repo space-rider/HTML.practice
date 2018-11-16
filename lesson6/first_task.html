@@ -10,52 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
-    <style>
-        article:last-of-type {
-            margin-top: 40px;
-        }
-
-        hr {
-            color: grey;
-            opacity: 0.2;
-            height: 0.1px;
-        }
-
-        form {
-            width: 350px;
-            margin-top: 3%;
-            font-size: 0.80rem;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        form>p {
-            font-size: 0.85rem;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            color: #003b67;
-            position: relative;
-            display: inline;
-            background-color: white;
-            top: -20px;
-            left: 30px;
-            padding: 0 25px;
-        }
-
-        #first_name, #middle_name, #last_name, #address_field, #town_field, #state_field, #zipcode_field {
-            margin: 0.5% 30px;
-        }
-
-        #state_field {
-            width: 147px;
-            height: 1.45rem;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .text_imput {
-            text-align: right;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/first_task.css">
 </head>
 
 <body>
@@ -77,13 +32,13 @@
                 <hr>
                 <p>Personal information</p><br>
                 <div class="text_imput">
-                    <b>* First name:</b><input type="text" name="first_name" id="first_name"> <br>
+                    <b>* First name:</b><input type="text" name="first_name" id="first_name" requierd> <br>
                 </div>
                 <div class="text_imput">
                     Middle name:<input type="text" name="middle_name" id="middle_name"> <br>
                 </div>
                 <div class="text_imput">
-                    <b>* Last name:</b><input type="text" name="last_name" id="last_name"> <br>
+                    <b>* Last name:</b><input type="text" name="last_name" id="last_name" requierd> <br>
                 </div><br><br>
 
                 <hr>
@@ -99,11 +54,15 @@
                         <option value="Choose a State">Choose a State</option>
                         <option value="Alabama">Alabama</option>
                         <option value="California">California</option>
-                        <option value="Washington DC">Washington DC</option>
+                        <option value="Montana">Monatana</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New Mexico">New Mexico</option>
+                        <option value="... etc">... etc</option>
                     </select>
                 </div>
                 <div class="text_imput">
-                    <b>*Zip code:</b><input type="text" name="zipcode_field" id="zipcode_field">
+                    <b>*Zip code:</b><input type="text" name="zipcode_field" id="zipcode_field" requierd>
                 </div>
             </form>
         </article>
@@ -112,6 +71,16 @@
             <img src="img/form1.jpg" alt="образец формы.jpg" title="Образец формы">
         </article>
     </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="first_task.html" class="current_location">задание №1</a></li>
+            </ul>
+        </nav>
+    </footer>
 
 </body>
 
