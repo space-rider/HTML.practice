@@ -41,3 +41,8 @@ form>p {
 .text_imput {
     text-align: right;
 }
+
+img {
+    max-width: 100%;
+    min-width: 30%;
+}
