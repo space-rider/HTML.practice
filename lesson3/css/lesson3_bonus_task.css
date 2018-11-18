@@ -2,5 +2,9 @@
     font-size: 18px; 
     border: solid; 
     border-color: slategrey; 
-    padding: 3px
+    padding: 3px;
+}
+
+article p {
+    width: 100%;
 }
