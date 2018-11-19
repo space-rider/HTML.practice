@@ -11,17 +11,17 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <style>
-        .container {
-            background-color: black;
-        }
-
         img {
-            margin-top: 15px;
+            padding: 2% 2% 7% 2%;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 1% auto;
         }
-
-        img:last-child {
-            margin-bottom: 15px;
-        }
+        /*aside {
+            position: fixed;
+            top: 205px;
+            right: 0;
+            text-align: right;
+        } боковая панель */
     </style>
 </head>
 
@@ -34,29 +34,37 @@
         </ul>
     </nav>
 
+    <header>
+        <h2>
+            Поэкспериментируйте с элементами, появившимися в стандарте HTML5.
+        </h2>
+    </header>
+
     <section>
         <article>
             <div class="container">
                 <div class="row">
-                    <div class="col" style="height: 80px; padding: 20px; background-color: lightskyblue; font-size: 1.6em;">
+                    <div class="col" style="padding: 20px; background-color: lightskyblue; font-size: 1.6em; margin-top: 2%;">
                         Some random pictures from web ///
-                    </div>
-                    <div class="container">
-                        <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr34-19.jpg" />
-                    </div>
-                    <div class="container">
-                        <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr49-1.png" />
-                    </div>
-                    <div class="container">
-                        <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr12-18.jpg" />
-                    </div>
-                    <div class="container">
-                        <img src=http://www.shockmansion.com/wp-content/myimages/2018/05/FijiSM.jpg" />
                     </div>
                 </div>
             </div>
         </article>
+
+        <article>
+            <div class="row">
+                <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr34-19.jpg" alt="mrb rider" title="mtb rider" />
+                <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/FijiSM.jpg" alt="surfer" title="surfer" />
+                <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr49-1.png" alt="antique building"
+                    title="antique building" />
+                <img src="http://www.shockmansion.com/wp-content/myimages/2018/05/rr12-18.jpg" alt="mini ramp" title="mini ramp" />
+            </div>
+        </article>
     </section>
+
+    <!-- <aside>
+        <a href="https://www.terrasoft.ua/"><img src="img/advertising.png" alt="advertising" style="width: 60%; height:60%;"></a>
+    </aside> -->
 
     <footer>
         <nav>
