@@ -10,24 +10,13 @@ h2 {
     margin: 1% 3%;
 }
 
-header>p, header>ol>li {
-    font-size: 1.3em;
-    margin: 1% 3%;
-}
-
-pre {
-    color: #666;
-}
-
 h3 {
     font-size: 1.3em;
-    display: inline-block;
-    background: yellow;
 }
 
-/* mark {
+mark {
     padding: 0.3%;
-} */
+}
 
 p {
     font-size: 1.2em;
@@ -66,23 +55,7 @@ nav>ul>li {
     color: grey;
 }
 
-.nest_article {
-    margin-left: 3%;
-}
-
-.image {
-    box-shadow: 6px 6px 4px #000;
-}
-
 /* стиль для списка на заглавной странице */
-.info_list {
+main>ul>li {
     font-family: 'Fira Sans', sans-serif;
-} 
-
-a  {
-    text-decoration: none;
-}
-
-.main_style {
-    margin: 0 6%; 
 }
