@@ -24,6 +24,7 @@ p {
 
 pre {
     color: #666;
+    overflow-x: auto;
 }
 
 section {
@@ -39,6 +40,12 @@ section {
 .blue {
     color: blue;
     font-weight: 500;
+    white-space: nowrap;
+}
+
+.green {
+    color:#1f7a1f;
+        
 }
 /* снизу разметка для списка который используется для навигации */
 nav>ul {
