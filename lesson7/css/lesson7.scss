@@ -1,0 +1,75 @@
+$padding: 1%;
+
+body{
+    height: 100%;
+    width:  100%;
+    margin: 0;
+    background-color: rgb(221, 227, 240);
+}
+
+body {
+  
+    section {
+        @media (max-width:800px) {
+            text-align: center;
+        }
+    }
+        
+    .first_card {
+        display: inline-block;
+        border: 1px solid #000;
+        text-align: center;
+        width: 300px;
+        padding: $padding;
+        color: #000;
+
+        @media (max-width:400px) {
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .first_card:hover {
+        box-shadow: 5px 5px;
+    }
+
+    .second_card {
+        color: #000;
+        display: inline-block;
+        border: 1px solid #000;
+        text-align: center;
+        width: 300px;
+        padding: $padding;
+
+        @media (max-width:400px) {
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+    .second_card:hover {
+        box-shadow: 5px 5px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+
+        @media (max-height: 400px) and (orientation: landscape){
+            position: static;
+            margin-top: 15px;
+        }
+
+        li:hover {
+            opacity: .7;
+        }
+    }
+}
+
