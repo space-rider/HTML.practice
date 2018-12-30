@@ -1,0 +1,78 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #dde3f0;
+}
+
+@media (max-width: 800px) {
+  body section {
+    text-align: center;
+  }
+}
+
+body .first_card {
+  display: inline-block;
+  border: 1px solid #000;
+  text-align: center;
+  width: 300px;
+  padding: 1%;
+  color: #000;
+}
+
+@media (max-width: 400px) {
+  body .first_card {
+    width: 100%;
+  }
+}
+
+body .first_card a {
+  text-decoration: none;
+}
+
+body .first_card:hover {
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+}
+
+body .second_card {
+  color: #000;
+  display: inline-block;
+  border: 1px solid #000;
+  text-align: center;
+  width: 300px;
+  padding: 1%;
+}
+
+@media (max-width: 400px) {
+  body .second_card {
+    width: 100%;
+  }
+}
+
+body .second_card a {
+  text-decoration: none;
+}
+
+body .second_card:hover {
+  -webkit-box-shadow: 5px 5px;
+          box-shadow: 5px 5px;
+}
+
+body footer {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  body footer {
+    position: static;
+    margin-top: 15px;
+  }
+}
+
+body footer li:hover {
+  opacity: .7;
+}
+/*# sourceMappingURL=lesson7.css.map */
