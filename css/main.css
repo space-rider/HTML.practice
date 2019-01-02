@@ -69,6 +69,11 @@ nav>ul>li {
 /* стиль для списка на заглавной странице */
 main>ul>li {
     font-family: 'Fira Sans', sans-serif;
+    margin-top: 0.4em;
+}
+
+main>ul>li:hover {
+    opacity: 0.4;
 }
 
 .picture_shadow {
