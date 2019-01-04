@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Tinos&subset=cyrillic');
+
+body {
+    font-family: 'Tinos', serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    display: inline;
+    border-bottom: 1px dashed #000;
+    padding-bottom: 3px;
+    font-weight: 600;
+}
+
+section {
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}
+
+section:last-child {
+    position: relative;
+    top: 60px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 30px;
+    margin-top: 18px;
+}
+
+li {
+    margin-top: 10px;
+    font-size: 1.1em;
+    list-style: none;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 740px) {
+    section {
+        margin-left: 1%;
+        position: static;
+    }
+
+    section:last-child {
+        position: relative;
+        top: 40px;
+    }
+
+    ul {
+        margin-top: 20px;
+    }
+
+    li {
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+}

@@ -11,50 +11,51 @@ body {
   }
 }
 
-body .first_card {
+body #first_card {
   display: inline-block;
   border: 1px solid #000;
-  text-align: center;
   width: 300px;
   padding: 1%;
   color: #000;
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {
-  body .first_card {
+  body #first_card {
     width: 100%;
   }
 }
 
-body .first_card a {
+body #first_card a {
   text-decoration: none;
 }
 
-body .first_card:hover {
+body #first_card:hover {
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
 }
 
-body .second_card {
+body #second_card {
   color: #000;
   display: inline-block;
   border: 1px solid #000;
   text-align: center;
   width: 300px;
   padding: 1%;
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {
-  body .second_card {
+  body #second_card {
     width: 100%;
   }
 }
 
-body .second_card a {
+body #second_card a {
   text-decoration: none;
 }
 
-body .second_card:hover {
+body #second_card:hover {
   -webkit-box-shadow: 5px 5px;
           box-shadow: 5px 5px;
 }
