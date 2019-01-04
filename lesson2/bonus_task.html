@@ -1,13 +1,12 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Работа с изображениями, таблицами и списками.</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="css/new.css" />
+    <link rel="stylesheet" href="css/lesson2.css" />
     <style>
         h3 {
             font-weight: 300;
@@ -17,101 +16,107 @@
             max-width: 100%;
             min-width: 30%;
         }
+
+        #img_example {
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">главная страница</a> /</li>
-            <li><a href="index.html">к списку задач</a> /</li>
-            <li><a href="#" class="current_location">дополнительное задание</a></li>
-        </ul>
-    </nav>
-
     <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">главная страница</a> /</li>
+                <li><a href="index.html">к списку задач</a> /</li>
+                <li><a href="#" class="current_location">дополнительное задание</a></li>
+            </ul>
+        </nav>
+
         <h2>
             Создайте HTML страницу, на которой, будет размещено одно изображение с локального компьютера,
             одно изображение с удаленного источника, таблицы 3*3, и различные виды списков.
         </h2>
     </header>
 
-    <section>
-        <article>
-
+    <main>
+        <section>
             <div id="img_example">
-                <h3>локальное изображение из папки /img</h3>
-                <img src="img/rr13.png" title="локальное изображение" alt="локальное изображение" />
+                <p>локальное изображение из папки /img</p>
+                <img src="img/rr13.png" title="локальное изображение мотоцикла" alt="локальное изображение мотоцикла" />
+            </div>
+        </section>
 
-                <h3>изображение с сайта</h3>
+        <section>
+            <div id="img_example">
+                <p>изображение с сайта</p>
                 <img src="http://www.shockmansion.com/wp-content/myimages/2018/06/rr32-18.jpg" title="изображение с сайта"
                     alt="изображение с сайта" />
             </div>
+        </section>
 
-            <table width="200" height="200" style="margin: 5px auto">
-                <caption style="text-align:center; font-size: 1.1em;">Таблица размером 3X3</caption>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-                <tr>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                    <td>&nbsp</td>
-                </tr>
-            </table>
+        <table width="200" height="200" style="margin: 5px auto 30px auto">
+            <caption style="text-align:center; font-size: 1.1em;">Таблица размером 3X3</caption>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+            <tr>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </table>
 
-            <div id="wish_list">
-                <div id="first_list">
-                    <ul type="square">
-                        <li>Оплатить</li>
-                        <ul>
-                            <li>Воду</li>
-                            <li>Газ</li>
-                            <li>Электроенергию</li>
-                        </ul><br>
-                        <li>Check</li>
-                        <ul>
-                            <li>engine</li>
-                            <li>tires</li>
-                            <li>brakes</li>
-                            <li>oil</li>
-                        </ul><br>
-                        <li>Предстоящие праздники</li>
-                        <ul>
-                            <li>день рождения</li>
-                            <li>новый год</li>
-                            <li>рождество</li>
-                        </ul><br>
-                        <li>Больше проводить свободное время</li>
-                        <ul>
-                            <li>в путешествиях</li>
-                            <li>читая интересные книги</li>
-                        </ul>
+        <div id="wish_list">
+            <div id="first_list">
+                <ul type="square">
+                    <li>Оплатить</li>
+                    <ul>
+                        <li>Воду</li>
+                        <li>Газ</li>
+                        <li>Электроенергию</li>
+                    </ul><br>
+                    <li>Check</li>
+                    <ul>
+                        <li>engine</li>
+                        <li>tires</li>
+                        <li>brakes</li>
+                        <li>oil</li>
+                    </ul><br>
+                    <li>Предстоящие праздники</li>
+                    <ul>
+                        <li>день рождения</li>
+                        <li>новый год</li>
+                        <li>рождество</li>
+                    </ul><br>
+                    <li>Больше проводить свободное время</li>
+                    <ul>
+                        <li>в путешествиях</li>
+                        <li>читая интересные книги</li>
                     </ul>
-
-                </div>
-
-                <div id="second_list">
-                    <ol>Список желаний: 
-                        <li>Wi-fi роутер</li>
-                        <li>Монитор 27"</li>
-                        <li>Планшет</li>
-                        <li>Проектор</li>
-                        <li>Беспроводная гарнитура</li>
-                    </ol>
-
-                </div>
+                </ul>
             </div>
 
-        </article>
-    </section>
+            <div id="second_list">
+                <ol>Список желаний:
+                    <li>Wi-fi роутер</li>
+                    <li>Монитор 27"</li>
+                    <li>Планшет</li>
+                    <li>Проектор</li>
+                    <li>Беспроводная гарнитура</li>
+                </ol>
+            </div>
+        </div>
+
+        </section>
+    </main>
 
     <footer>
         <nav>
