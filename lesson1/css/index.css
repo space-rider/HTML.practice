@@ -52,7 +52,7 @@ p {
     background-color: #fff;
     padding: 1%;
     display: block;
-    margin: 2% auto;
+    margin: 2% auto 4% auto;
 }
 
 nav>ul {
@@ -97,5 +97,8 @@ li:hover {
     footer {
         position: absolute;
         bottom: 5px;
+    }
+    .btns {
+        margin: 2% auto;
     }
 }
