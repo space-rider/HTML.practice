@@ -1,66 +1,63 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Введение в HTML5</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <h1>Введение в HTML5</h2>
+        <h1>Введение в HTML5</h1>
     </header>
 
-    <section>
-        <article>
-            <div class="article_card">
-                <a href="first_page.html">
-                    <p>
-                        Выучите основные термины и понятия, рассмотренные на уроке.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
+    <main>
+        <section>
+            <div class="section_card">
+                <p>Выучите основные термины и понятия, рассмотренные на уроке.</p>
+                <input type="button" class="btns" id="button_info" value="Перейти">
+            </div>
+        </section>
+
+        <section>
+            <div class="section_card">
                 <h3>Задание №1</h3>
-                <a href="second_page.html">
-                    <p>
-                        Создайте страницу, на которой разместите теги физической разметки.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
+                <p>Создайте страницу, на которой разместите теги физической разметки.</p>
+                <input type="button" class="btns" id="button_firstTask" value="Перейти">
+            </div>
+        </section>
+
+        <section>
+            <div class="section_card">
                 <h3>Задание №2</h3>
-                <a href="third_page.html">
-                    <p>
-                        Создайте страницу, на которой будут размещены теги логической разметки. Запустите этот и
-                        предыдущий примеры в разных браузерах. Отличаются ли элементы в разных браузерах?
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
+                <p>Создайте страницу, на которой будут размещены теги логической разметки. Запустите этот
+                    и предыдущий примеры в разных браузерах. Отличаются ли элементы в разных браузерах?</p>
+                <input type="button" class="btns" id="button_seconTask" value="Перейти">
+            </div>
+        </section>
+
+        <section></section>
+
+        <section>
+            <div class="section_card">
                 <h3>Задание №3</h3>
-                <a href="fourth_page.html">
-                    <p>
-                        Создайте страницу, которая находится в каталоге HW.
-                    </p>
-                </a>
-            </div><br>
-            <div class="article_card">
+                <p>Создайте страницу, которая находится в каталоге HW.</p>
+                <input type="button" class="btns" id="button_thirdTask" value="Перейти">
+            </div>
+        </section>
+
+        <section>
+            <div class="section_card">
                 <h3>Дополнительное задание</h3>
-                <a href="bonus_page.html">
-                    <p>
-                        Создайте HTML страницу, на которой, с помощью тега &lt; H1 &gt; выведите приветствие к
-                        пользователю.
-                    </p>
-                </a>
-            </div><br>
-        </article>
-    </section>
+                <p>Создайте HTML страницу, на которой, с помощью тега &lt; H1 &gt; выведите приветствие к
+                    пользователю.</p>
+                <input type="button" class="btns" id="button_bonusTask" value="Перейти">
+            </div>
+        </section>
+    </main>
 
     <footer>
         <nav>
@@ -71,5 +68,5 @@
         </nav>
     </footer>
 </body>
-
+<script src="js/lesson1.js"></script>
 </html>
