@@ -5,7 +5,7 @@ form {
 
 .custom {
     margin-bottom: 10px;
-}
+    }
 
 #submit_button {
     margin-top: 20px;
@@ -19,6 +19,7 @@ form {
     }
 
     .custom {
-        width: 100%;
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 }
