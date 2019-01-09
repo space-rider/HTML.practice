@@ -110,6 +110,10 @@ blockquote {
     box-shadow: 2px 2px 3px;
 }
 
+.list_whitespace>li {
+    margin-bottom: 5px;
+}
+
 @media screen and (max-width: 600px) {
     figure {
         margin: 0;
