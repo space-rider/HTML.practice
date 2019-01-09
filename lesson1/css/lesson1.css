@@ -35,6 +35,10 @@ img {
     box-shadow: 7px 9px 10px #000;
 }
 
+.tags {
+    padding: 0.5% 2% 0.5% 2%;
+}
+
 section {
     margin: 0 6%;
 }
