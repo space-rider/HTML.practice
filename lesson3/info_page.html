@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Основные понятия CSS">
     <title>Основные термины и понятия CSS3</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web:700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
-    <style>
-        img {
-            max-width: 100%;
-            min-width: 30%;
-        }
-    </style>
 </head>
 
 <body>
@@ -35,7 +29,8 @@
             <h3>
                 <mark>Зачем нужны таблицы стилей. Что такое CSS?</mark>
             </h3>
-            <p><b>CSS (Cascading Style Sheets)</b> – каскадные таблицы стилей, используются для
+            <p>
+                <strong>CSS (Cascading Style Sheets)</strong> – каскадные таблицы стилей, используются для
                 описания внешнего вида документа, написанного языком разметки.
             </p>
 
@@ -52,9 +47,9 @@
                 Разработкой стандартов занимается организация W3C.
             </p>
 
-            <h3>
-                <mark>Преимущества применения стилей</mark>
-            </h3>
+            <p>
+                Преимущества применения стилей:
+            </p>
 
             <ol>
                 <li>Разграничение кода и оформления.</li>
@@ -65,9 +60,9 @@
                 <li>Централизованное хранение.</li>
             </ol>
 
-            <h3>
-                <mark>Типы стилей</mark>
-            </h3>
+            <p>
+                Типы стилей:
+            </p>
 
             <ul type="square">
                 <li><i>Стиль браузера</i> – оформление, которое по умолчанию применяется к элементам веб-страницы
@@ -78,37 +73,43 @@
                     браузера. Такой стиль имеет более высокий приоритет и переопределяет исходное оформление
                     документа.</li>
             </ul>
-        </article>
+        </article> <br>
 
         <article>
             <h3>
                 <mark>Способы добавления стилей на страницу</mark>
             </h3>
 
-            <p>1. Inline или внутренние стили подключаются с использованием атрибута <span class="red">style</span>. <br>
-                <br>
-                <span class="blue">&lt; p <span class="red">style</span> = "</span>...<span class="blue">"&gt;</span>
-                Some text <span class="blue">&lt; /p &gt;</span>
+            <p>
+                1. Inline или внутренние стили подключаются с использованием атрибута <span class="red">style</span>.
+                <blockquote>
+                    <span class="blue">&lt; p <span class="red">style</span> = "</span>...<span class="blue">"&gt;</span>
+                    Some text <span class="blue">&lt; /p &gt;</span>
+                </blockquote>
             </p>
 
-            <p>2. Глобальные стили устанавливаются тегом <span class="blue">&lt; style &gt;</span>, который должен быть
-                размещен в теге <span class="blue">&lt; head &gt;</span>. <br> <br>
-                <span class="blue">&lt; head &gt;</span> <br>
-                &nbsp;&nbsp;<span class="blue">&lt; style &gt;</span> <br>
-                &nbsp;&nbsp;&nbsp;<span class="blue">...</span> <br>
-                &nbsp;&nbsp;<span class="blue">&lt; /style &gt;</span> <br>
-                <span class="blue">&lt; /head &gt;</span>
+            <p>
+                2. Глобальные стили устанавливаются тегом <span class="blue">&lt; style &gt;</span>, который должен
+                быть размещен в теге <span class="blue">&lt; head &gt;</span>.
+                <blockquote>
+                    <span class="blue">&lt; head &gt;</span> <br>
+                    &nbsp;&nbsp;<span class="blue">&lt; style &gt;</span> <br>
+                    &nbsp;&nbsp;&nbsp;<span class="blue">...</span> <br>
+                    &nbsp;&nbsp;<span class="blue">&lt; /style &gt;</span> <br>
+                    <span class="blue">&lt; /head &gt;</span>
+                </blockquote>
             </p>
 
-            <p>3. Тегом <span class="blue">&lt; link &gt;</span> в атрибуте <b><i>href</i></b> которого задается путь к
-                файлу со стилями. Файл должен иметь расширение
-                <b>.css</b>. Тег <span class="blue">&lt; link &gt;</span> должен быть размещен в теге <span class="blue">&lt;
-                    head &gt;</span>. <br><br>
-                <span class="blue">&lt; link <span class="red">href</span> = "url"</span><span class="red"> rel</span><span
-                    class="blue"> ="</span>stylesheet<span class="blue">" &gt;</span>
-                <link href=“url” rel=“stylesheet” />
+            <p>
+                3. Тегом <span class="blue">&lt; link &gt;</span> в атрибуте <b><i>href</i></b> которого задается путь
+                к файлу со стилями. Файл должен иметь расширение <b>.css</b>. Тег <span class="blue">&lt;
+                    link &gt;</span> должен быть размещен в теге <span class="blue">&lt; head &gt;</span>.
+                <blockquote>
+                    <span class="blue">&lt; link <span class="red">href</span> = "url"</span><span class="red"> rel</span><span
+                        class="blue"> ="</span>stylesheet<span class="blue">" &gt;</span>
+                </blockquote>
             </p>
-        </article>
+        </article> <br>
 
         <article>
             <h3>
@@ -116,34 +117,45 @@
             </h3>
             <p>Для inline стилей используется следующий формат записи css стилей:</p>
 
-            <img class="picture_shadow" src="img/css style example.png" alt="" title="">
+            <figure>
+                <img class="picture_shadow" src="img/css style example.png" alt="Иллюстрация применения inline стиля"
+                    title="Пример">
+            </figure> <br>
 
             <p>В теге <span class="blue">&lt; style &gt;</span> и во внешних стилях используется следующий синтаксис:</p>
 
-            <img class="picture_shadow" src="img/selector example.png" alt="" title="">
+            <figure>
+                <img class="picture_shadow" src="img/selector example.png" alt="Иллюстрация, как задавать стили" title="Пример">
+            </figure>
 
             <p>В качестве селектора может выступать имя тега, класс, идентификатор, также селекторы могут быть сложные.</p>
-        </article>
+        </article> <br>
 
         <article>
             <h3>
-                <mark>Селектор элемента</mark>
+                <mark>Селекторы</mark>
             </h3>
-            <p>Если в качестве селектора выступает имя элемента (тега), то в этом случае все элементы данного тега
-                будут
-                соответствовать заданным стилям.</p>
+
+            <h4>Селектор элемента</h4>
+
+            <p>
+                Если в качестве селектора выступает имя элемента (тега), то в этом случае все элементы данного тега
+                будут соответствовать заданным стилям.
+            </p>
+
             <p>
                 Если внутри этих тегов будут находится текстовые элементы, они будут наследовать определенные правила.
             </p>
+
             <pre>
-    <span class="blue">p</span>
-        {
-            <span class="red">font-family</span>: Arial;
-            <span class="red">font-size</span>: 18pt;
-            <span class="red">color</span>: green;
-        }
+    <span class="blue">p</span>{                
+        <span class="red">font-family</span>: Arial;
+        <span class="red">font-size</span>: 18pt;
+        <span class="red">color</span>: green;
+    }
             </pre>
-            <h3><mark>Селектор класса</mark></h3>
+
+            <h4>Селектор класса</h4>
             <p>Если необходимо задать стили для индивидуального элемента или задать разные стили для одного тега
                 следует использовать селектор класс.</p>
             <p>Имена классов должны начинаться с латинского символа и могут содержать в себе символ дефиса и
@@ -153,39 +165,44 @@
                 открывающем теге задать атрибут <span class="red">class</span> и присвоить ему
                 имя класса, описанного в стилях.
             </p>
-            <p><span class="blue">&lt; p <span class="red">class</span> ="</span><span class="red">testClass</span><span
-                    class="blue">"&gt;</span>
-                Content <span class="blue">&lt; /p &gt;</span></p>
+
+            <blockquote>
+                <span class="blue">&lt; p <span class="red">class</span> ="</span><span class="red">testClass</span><span
+                    class="blue">"&gt;</span> Content <span class="blue">&lt; /p &gt;</span>
+            </blockquote>
+
             <pre>
-    <span class="blue">.testClass</span>
-        {
+    <span class="blue">.testClass</span>{
             <span class="red">font-family</span>: Arial;
             <span class="red">font-size</span>: 2em;
             <span class="red">font-style</span>: italic;
-        }            
+    }            
             </pre>
-            <h3>
-                <mark>Селектор идентификатор</mark>
-            </h3>
-            <p><b>Идентификатор</b> – особенный вид селектора, которым помечается один элемент на странице. Чтобы
+
+            <h4>Селектор идентификатор</h4>
+
+            <p>
+                <b>Идентификатор</b> – особенный вид селектора, которым помечается один элемент на странице. Чтобы
                 указать селектор идентификатор, в CSS необходимо использовать конструкцию <i>#имя_идентификатора</i>.
             </p>
-            <p>Чтобы привязать к элементу идентификатор, необходимо
-                в открывающем теге задать атрибут <span class="red">id</span> и присвоить ему
-                имя идентификатора, описанного в стилях.
+            <p>
+                Чтобы привязать к элементу идентификатор, необходимо в открывающем теге задать атрибут 
+                <span class="red">id</span> и присвоить ему имя идентификатора, описанного в стилях.
             </p>
-            <p><span class="blue">&lt; p <span class="red">id</span>="</span><span class="red">id1</span><span class="blue">"&gt;</span>
-                Content <span class="blue">&lt; /p &gt;</span></p>
+            <blockquote>
+                <span class="blue">&lt; p <span class="red">id</span>="</span><span class="red">id1</span><span class="blue">"&gt;</span>
+                Content <span class="blue">&lt; /p &gt;</span>
+            </blockquote>
+
             <pre>
-    <span class="blue">#id1</span>
-        {
-            <span class="red">font-family</span>: Arial;
-            <span class="red">font-weight</span>: 300;
-            <span class="red">border</span>: 1px solid black;
-            <span class="red">color</span>: blue;
-        }            
+    <span class="blue">#id1</span>{    
+        <span class="red">font-family</span>: Arial;
+        <span class="red">font-weight</span>: 300;
+        <span class="red">border</span>: 1px solid black;
+        <span class="red">color</span>: blue;
+    }            
             </pre>
-        </article>
+        </article> <br>
 
         <article>
             <h3>
