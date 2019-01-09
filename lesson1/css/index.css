@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Slab&subset=cyrillic');
 
 body {
@@ -7,7 +7,9 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    margin-top: 0;
 }
 
 h3 {
@@ -52,7 +54,6 @@ p {
     background-color: #fff;
     padding: 1%;
     display: block;
-    margin: 2% auto 4% auto;
 }
 
 nav>ul {
@@ -81,7 +82,7 @@ li:hover {
     opacity: 0.6;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 450px) {
     main {
         display: block;
     }   
@@ -92,13 +93,28 @@ li:hover {
         width: 100%;
         }
     }
+    .btns {
+        margin: 5% auto 7% auto;
+    }
+
+@media screen and (max-width: 800px) {
+    main {
+        display: block;
+    }   
+    section {
+        margin: 0 2% 25px 2%;
+    }
+    .section_card {
+        width: 100%;
+        }
+
+    .btns {
+        margin: 3% auto;
+    }
+}   
     
 @media screen and (min-width: 1000px) {
-    footer {
-        position: absolute;
-        bottom: 5px;
-    }
     .btns {
-        margin: 2% auto;
+        margin: 5% auto;
     }
 }

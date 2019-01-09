@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Tinos&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
 body {
-    font-family: 'Tinos', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -9,7 +9,7 @@ h1 {
     display: inline;
     border-bottom: 1px dashed #000;
     padding-bottom: 3px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 section {
