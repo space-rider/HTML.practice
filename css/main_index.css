@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600&subset=cyrillic,cyrillic-ext,latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic,cyrillic-ext,latin-ext");
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+p {
+  font-family: 'Roboto' , sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body main {
+    margin: 0 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  body main .main_card {
+    margin: 15% auto;
+    width: 400px;
+  }
+  body main .main_card a {
+    text-decoration: none;
+    color: #000;
+  }
+  body main .main_card a:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  body main .main_card {
+    margin: 2% auto;
+  }
+}
+
+body main .main_card {
+  padding: 3%;
+  color: #000;
+  font-size: 20px;
+}
+
+body main .main_card h2 {
+  text-align: center;
+}
+
+body main .main_card li {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=main_index.css.map */

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+} 
+
+p {
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        text-align: center;
+        display: none;
+    }
+
+    main {
+        @media screen and (min-width: 1024px){
+            margin: 0 5%;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+
+            .main_card {
+                margin: 15% auto;
+                width: 400px;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+    
+                a:hover {
+                    text-decoration-line: underline; 
+                }
+            }
+        }
+
+        @media screen and (max-width: 1023px){
+            .main_card {
+                margin: 2% auto;
+            }
+        }
+        
+        .main_card {
+            padding: 3%;
+            color: #000;
+            font-size: 20px;
+
+            h2{
+                text-align: center;
+            }
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
